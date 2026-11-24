@@ -1,0 +1,143 @@
+# ============================================================
+#  VIRA AI — .gitignore
+# ============================================================
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+*.pyo
+*.pyw
+*.egg
+*.egg-info/
+dist/
+build/
+*.so
+*.dll
+*.dylib
+.Python
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.nox/
+htmlcov/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# --- Node / Frontend ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.npm
+.yarn/
+dist/
+frontend/dist/
+
+# --- Environment & Secrets ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+cookies.txt
+*.cookies
+secrets.*
+credentials.*
+
+# --- Storage / Media (user-generated, too large for Git) ---
+backend/storage/uploads/
+backend/storage/outputs/
+backend/storage/temp/
+backend/storage/thumbnails/
+backend/storage/audio/
+
+# Keep these empty directories tracked via .gitkeep
+!backend/storage/uploads/.gitkeep
+!backend/storage/outputs/.gitkeep
+!backend/storage/temp/.gitkeep
+!backend/storage/thumbnails/.gitkeep
+!backend/storage/audio/.gitkeep
+
+# --- Database (auto-created on first run) ---
+backend/storage/*.db
+backend/storage/*.sqlite
+*.db
+*.sqlite
+*.sqlite3
+
+# --- Logs ---
+backend/logs/
+*.log
+logs/
+
+# --- AI Models (too large for Git) ---
+models/
+*.onnx
+*.bin
+*.gguf
+*.safetensors
+*.pt
+*.pth
+*.h5
+*.pkl
+
+# --- Video / Audio (user content) ---
+*.mp4
+*.mkv
+*.mov
+*.webm
+*.avi
+*.wav
+*.mp3
+*.aac
+*.flac
+*.m4a
+
+# --- Temp / OS ---
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+*.lnk
+
+# --- IDEs ---
+.vscode/settings.json
+.vscode/launch.json
+.vscode/.ropeproject
+.idea/
+*.iml
+.project
+.settings/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+*.ipynb
+
+# --- Pycache anywhere ---
+**/__pycache__/
+**/*.pyc
